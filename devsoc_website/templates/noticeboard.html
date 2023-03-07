@@ -1,0 +1,854 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from offshorethemes.com/html/optimistic-blog/demo/index.php by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 06 Jan 2023 17:21:06 GMT -->
+<!-- Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Noitce</title>
+
+<!-- Favicons -->
+<link href="{% static 'img/DevSoc_Logo.png' %}" rel="icon">
+<link href="{% static 'img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans&display=swap" rel="stylesheet">
+<link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+<!-- Vendor CSS Files -->
+<link href="{% static 'vendor/aos/aos.css' %}" rel="stylesheet">
+<link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+<link href="{% static 'vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+<link href="{% static 'vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
+<link href="{% static 'vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+<link href="{% static 'vendor/remixicon/remixicon.css' %}" rel="stylesheet">
+<link href="{% static 'vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+
+
+<!-- Vendor CSS Files -->
+<link href="{% static 'vendor/aos/aos.css' %}" rel="stylesheet">
+<link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+<link href="{% static 'vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+<link href="{% static 'vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
+<link href="{% static 'vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+<link href="{% static 'vendor/remixicon/remixicon.css' %}" rel="stylesheet">
+<link href="{% static 'vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+
+<!-- Template Main CSS File -->
+<link href="{% static 'css/style.css' %}" rel="stylesheet">
+
+
+    <link
+        href="https://fonts.googleapis.com/css?family=Raleway:300,400,400i,500,600,700,700i&amp;subset=cyrillic,greek-ext,latin-ext"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Stalemate&amp;subset=latin-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Spectral+SC:400,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700" rel="stylesheet">
+    <link href="{% static 'Noticeboard/assets/dist/css/style.min.css' %}" rel="stylesheet">
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+</head>
+
+<body>
+    <header id="header" class="fixed-top d-flex align-items-center header-transparent">
+        <div class="container d-flex align-items-center justify-content-between">
+
+            <div class="logo">
+                <h1><a href="index.html"><span><img src="{% static 'img/DevSoc_Logo.png' %}" alt=""></span></a></h1>
+                <!-- Uncomment below if you prefer to use an image logo -->
+                <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+            </div>
+
+            <nav id="navbar" class="navbar">
+                <ul>
+                    <li><a class="nav-link scrollto" href="{% url 'home' %}">Home</a></li>
+                    <li><a class="nav-link scrollto" href="{% url 'about' %}">About</a></li>
+                    <li><a class="nav-link scrollto" href="{% url 'resources' %}">Resources</a></li>
+                    <li><a class="nav-link scrollto active" href="#hero">Noticeboard</a></li>
+                    <li><a class="nav-link scrollto" href="#team">Team</a></li>
+                    <li><a class="nav-link scrollto" href="{% url 'forum' %}">Forum</a></li>
+                    <li><a class="nav-link scrollto" href="{% url 'login' %}">Login</a></li>
+                    <!-- <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
+                        <ul>
+                            <li><a href="#">Drop Down 1</a></li>
+                            <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i
+                                        class="bi bi-chevron-right"></i></a>
+                                <ul>
+                                    <li><a href="#">Deep Drop Down 1</a></li>
+                                    <li><a href="#">Deep Drop Down 2</a></li>
+                                    <li><a href="#">Deep Drop Down 3</a></li>
+                                    <li><a href="#">Deep Drop Down 4</a></li>
+                                    <li><a href="#">Deep Drop Down 5</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Drop Down 2</a></li>
+                            <li><a href="#">Drop Down 3</a></li>
+                            <li><a href="#">Drop Down 4</a></li>
+                        </ul>
+                    </li> -->
+                    <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+                </ul>
+                <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav><!-- .navbar -->
+
+        </div>
+    </header><!-- End Header -->
+    <section class="general-banner banner-layout-one">
+        <div class="general-banner-inner">
+            <!-- Swiper -->
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    {% for notice in notices|slice:"0:4" %}
+                    <div class="swiper-slide  banner-card">
+                        <div class="featured-post-image">
+                            {% for img in images %}
+                            {% if img.topic.id == notice.topic.id and img.banner %}
+                            <img src="{{img.image.url}}" alt="...."
+                                style="width: 500px; height: 500px;object-fit:cover;">
+                            {% endif %}
+                            {% endfor %}
+                            <div class="mask"></div>
+                        </div>
+                        <div class="featured-content-holder">
+                            <!-- <div class="featured-content-meta">
+                                <a href="#one"><span class="category">{{notice.topic}}</span></a>
+                            </div> -->
+                            <div class="featured-content-title">
+                                <h2><a href="#">{{notice.topic__name}}</a></h2>
+                            </div>
+                            <!-- <div class="featured-posted-date">
+                                <span class="posted-date">{{notice.topic}}</span>
+                            </div> -->
+                        </div>
+                    </div>
+                    {% endfor %}
+                    <!--Till here-->
+                    <!-- <div class="swiper-slide  banner-card">
+                    <div class="featured-post-image">
+                        <img src="{% static 'Noticeboard/assets/dist/img/p1.jpg' %}" alt="....">
+                        <div class="mask"></div>
+                    </div>
+                    <div class="featured-content-holder">
+                        <div class="featured-content-meta">
+                            <a href="#two"><span class="category">View More</span></a>
+                        </div>
+                        <div class="featured-content-title">
+                            <h2><a href="#">This is uncategorized post</a></h2>
+                        </div>
+                        <div class="featured-posted-date">
+                            <span class="posted-date">17 December, 2017</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide  banner-card">
+                    <div class="featured-post-image">
+                        <img src="{% static 'Noticeboard/assets/dist/img/b1.jpg' %}" alt="....">
+                        <div class="mask"></div>
+                    </div>
+                    <div class="featured-content-holder">
+                        <div class="featured-content-meta">
+                            <a href="#three"><span class="category">View More</span></a>
+                        </div>
+                        <div class="featured-content-title">
+                            <h2><a href="#">Live wild and free</a></h2>
+                        </div>
+                        <div class="featured-posted-date">
+                            <span class="posted-date">17 December, 2017</span>
+                        </div>
+                    </div>
+                    
+                </div> -->
+
+
+
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- <div class="swiper-button-next swiper-button-white"></div>
+            <div class="swiper-button-prev swiper-button-white"></div> -->
+            </div>
+        </div>
+        <!-- // general banner inner -->
+    </section>
+    <div class="container">
+        <div class="main-post-area-wrapper main-post-area-layout-one">
+            <div class="main-post-area-inner">
+                <div class="row">
+                    <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                        <div class="main-post-area-holder">
+                            <!--Main posts are here 1. latest post-->
+                            {% for notice in notices %}
+                            <article id="one" class="post-details-holder wow  fadeInUp">
+                                <div class="post-image gallery-post">
+                                    <div class="inpostgallery-container">
+                                        <div class="swiper-wrapper">
+                                            {% for img in images %}
+                                            {% if img.topic.id == notice.topic.id %}
+                                            <div class="swiper-slide">
+                                                <img src="{{img.image.url}}" alt="...">
+                                            </div>
+                                            {% endif %}
+                                            {% endfor %}
+                                            <!-- <div class="swiper-slide">
+                                            <img src="{% static 'Noticeboard/assets/dist/img/f2.jpg' %}" alt="...">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="{% static 'Noticeboard/assets/dist/img/f3.jpg' %}" alt="...">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="{% static 'Noticeboard/assets/dist/img/f4.jpg' %}" alt="...">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="{% static 'Noticeboard/assets/dist/img/f5.jpg' %}" alt="...">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="{% static 'Noticeboard/assets/dist/img/f6.jpg' %}" alt="...">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="{% static 'Noticeboard/assets/dist/img/f7.jpg' %}" alt="...">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="{% static 'Noticeboard/assets/dist/img/f8.jpg' %}" alt="...">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="{% static 'Noticeboard/assets/dist/img/f9.jpg' %}" alt="...">
+                                        </div> -->
+
+                                        </div>
+                                        <div class="swiper-button-next swiper-button-white"></div>
+                                        <div class="swiper-button-prev swiper-button-white"></div>
+                                    </div>
+                                </div>
+                                <!-- // post image -->
+                                <div class="post-title">
+                                    <h2>{{notice.topic__name}}</h2>
+                                </div>
+                                <!-- // post-title -->
+                                <div class="post-the-content clearfix layout-one-first-letter">
+                                    <p>{{notice.desc}}</p>
+                                </div>
+                                <!-- // post-the-content -->
+                                <div class="post-permalink">
+                                    <a href="https://tinyurl.com/DevSocIITKGP-Community">Join Our Community</a>
+                                </div>
+                                <!-- // post-permalink -->
+                                <div class="post-meta-and-share">
+                                    <div class="row">
+                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                            <div class="post-author">
+                                                <span class="post-author"><a href="#">Developers' Society</a></span>
+                                            </div>
+                                        </div>
+                                        <!-- // col 4 -->
+                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                            <div class="post-share">
+                                                <div class="share"></div>
+                                            </div>
+                                        </div>
+                                        <!-- // col 4 -->
+                                        <!-- <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                            <div class="post-comment-count">
+                                                <span class="post-comment-count"><a href="#">17 Comment</a></span>
+                                            </div>
+                                        </div> -->
+                                        <!-- // col 4 -->
+                                    </div>
+                                    <!-- // row -->
+                                </div>
+                            </article>
+                            {% endfor %}
+                            <!--1st post end 2nd post start-->
+                            <!-- <article id="two" class="post-details-holder wow  fadeInUp">
+                            <div class="post-image gallery-post">
+                                <div class="inpostgallery-container">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <img src="{% static 'Noticeboard/assets/dist/img/p1.jpg' %}" alt="...">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="{% static 'Noticeboard/assets/dist/img/p2.jpg' %}" alt="...">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="{% static 'Noticeboard/assets/dist/img/p3.jpg' %}" alt="...">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="{% static 'Noticeboard/assets/dist/img/p4.jpg' %}" alt="...">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="{% static 'Noticeboard/assets/dist/img/p5.jpg' %}" alt="...">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="{% static 'Noticeboard/assets/dist/img/p6.jpg' %}" alt="...">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="{% static 'Noticeboard/assets/dist/img/p7.jpg' %}" alt="...">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="{% static 'Noticeboard/assets/dist/img/p8.jpg' %}" alt="...">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="{% static 'Noticeboard/assets/dist/img/p9.jpg' %}" alt="...">
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="swiper-button-next swiper-button-white"></div>
+                                    <div class="swiper-button-prev swiper-button-white"></div>
+                                </div>
+                            </div>
+                            <div class="post-title">
+                                <h2>Google summer of code 2023 is here and still unsure of how to choose an organization?</h2>
+                            </div>
+                            <div class="post-the-content clearfix layout-one-first-letter">
+                                <p>The developers’ society is here to help you with a series in selecting the best fit.
+
+                                    Either take away the criteria and decide on your own or let the choices we made help you along the way as you embark on your journey into open source.
+                                    
+                                    This edition is for data and machine learning enthusiasts. Stay tuned for the web development edition.
+                                    
+                                    To stay up to date and to interact with like-minded people, do join our slack community
+                                    
+                                    </p>
+                            </div>
+                            <div class="post-permalink">
+                                <a href="https://tinyurl.com/DevSocIITKGP-Community">Join Our Community</a>
+                            </div>
+                            <div class="post-meta-and-share">
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                        <div class="post-author">
+                                            <span class="post-author"><a href="#">Developers' Society</a></span>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                        <div class="post-share">
+                                            <div class="share"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                        <div class="post-comment-count">
+                                            <span class="post-comment-count"><a href="#">17 Comment</a></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article> -->
+                            <!--2nd post end 3rd post start-->
+                            <!-- <article id="three" class="post-details-holder wow  fadeInUp">
+                            <div class="post-image gallery-post">
+                                <div class="inpostgallery-container">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <img src="{% static 'Noticeboard/assets/dist/img/b1.jpg' %}" alt="...">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="{% static 'Noticeboard/assets/dist/img/b2.jpg' %}" alt="...">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="{% static 'Noticeboard/assets/dist/img/b3.jpg' %}" alt="...">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="{% static 'Noticeboard/assets/dist/img/b4.jpg' %}" alt="...">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="{% static 'Noticeboard/assets/dist/img/b5.jpg' %}" alt="...">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="{% static 'Noticeboard/assets/dist/img/b6.jpg' %}" alt="...">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="{% static 'Noticeboard/assets/dist/img/b7.jpg' %}" alt="...">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="{% static 'Noticeboard/assets/dist/img/b8.jpg' %}" alt="...">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="{% static 'Noticeboard/assets/dist/img/b9.jpg' %}" alt="...">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="{% static 'Noticeboard/assets/dist/img/b10.jpg' %}" alt="...">
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="swiper-button-next swiper-button-white"></div>
+                                    <div class="swiper-button-prev swiper-button-white"></div>
+                                </div>
+                            </div>
+                            <div class="post-title">
+                                <h2>Want to try your hand at Google Summer of Code but need help figuring out where to start?</h2>
+                            </div>
+                            <div class="post-the-content clearfix layout-one-first-letter">
+                                <p>Developers Society presents to you a guide to GSoC 2023. Read on to understand how it works and how you can participate in this incredible opportunity to get real-world experience working on open-source projects.
+
+                                    To stay updated about it and get further guidance, join our community
+                                    </p>
+                            </div>
+                            <div class="post-permalink">
+                                <a href="https://tinyurl.com/DevSocIITKGP-Community">Join Our Community</a>
+                            </div>
+                            <div class="post-meta-and-share">
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                        <div class="post-author">
+                                            <span class="post-author"><a href="#">Developers' Society</a></span>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                        <div class="post-share">
+                                            <div class="share"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                        <div class="post-comment-count">
+                                            <span class="post-comment-count"><a href="#">17 Comment</a></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article> -->
+                            <!--3rd post end 4th post start-->
+                            <!-- <article id="four" class="post-details-holder wow  fadeInUp">
+                            <div class="post-image">
+                                <img src="{% static 'Noticeboard/assets/dist/img/banner4.jpeg' %}" alt="....">
+                            </div>
+                            <div class="post-title">
+                                <h2>All the Best for Placements</h2>
+                            </div>
+                            <div class="post-the-content clearfix layout-one-first-letter">
+                                <p>'When the going gets tough, the tough get going'.
+                                    With the placement season on, be tough, stay calm, and sail out of it with flying colors.
+                                    
+                                    Developers' Society wishes all people sitting for placements very good luck and a prosperous future ahead!</p>
+                            </div>
+                            <div class="post-meta-and-share">
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                        <div class="post-author">
+                                            <span class="post-author"><a href="#">Developers' Society</a></span>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                        <div class="post-share">
+                                            <div class="share"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                        <div class="post-comment-count">
+                                            <span class="post-comment-count"><a href="#">0 Comment</a></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article> -->
+
+
+                            <!-- // post-details-holder -->
+
+                        </div>
+                        <!-- // main-post-area-holder -->
+                    </div>
+                    <!-- // col -->
+                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+
+                        <aside class="sidebar">
+                            <div class="sidebar-inner">
+                                <div class="widget widget-about-me wow fadeInUp">
+                                    <div class="widget-content">
+                                        <div class="widget-about-me-profile">
+                                            <img src="{% static 'img/DevSoc_Logo.png' %}" alt="...">
+                                        </div>
+
+                                        <!-- // widget-extra-info-holder -->
+                                    </div>
+                                    <!-- // widget-content -->
+                                </div>
+                                <!-- // widget -->
+                                <div class="widget widget-social-links wow fadeInUp">
+                                    <div class="widget-content">
+                                        <div class="widget-title">
+                                            <h2>WE'RE social</h2>
+                                        </div>
+                                        <div class="widget-extra-info-holder">
+                                            <div class="widget-social-links">
+                                                <ul class="social-links-list">
+                                                    <li class="facebook-link">
+                                                        <a href="https://www.facebook.com/devsoc.iitkgp"
+                                                            class="clearfix" target="_blank">
+                                                            Facebook
+                                                            <span class="social-icon">
+                                                                <i class="fa fa-facebook"></i>
+                                                            </span>
+                                                        </a>
+                                                    </li>
+                                                    <!-- <li class="twitter-link">
+                                                        <a href="https://twitter.com/" class="clearfix" target="_blank">
+                                                            Twitter
+                                                            <span class="social-icon">
+                                                                <i class="fa fa-twitter"></i>
+                                                            </span>
+                                                        </a>
+                                                    </li> -->
+                                                    <!-- <li class="googleplus-link">
+                                                        <a href="https://plus.google.com/" class="clearfix"
+                                                            target="_blank">
+                                                            Google Plus
+                                                            <span class="social-icon">
+                                                                <i class="fa fa-google-plus"></i>
+                                                            </span>
+                                                        </a>
+                                                    </li> -->
+                                                    <li class="instagram-link">
+                                                        <a href="https://www.instagram.com/devsoc.iitkgp/"
+                                                            class="clearfix" target="_blank">
+                                                            Instagram
+                                                            <span class="social-icon">
+                                                                <i class="fa fa-instagram"></i>
+                                                            </span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="linkedin-link">
+                                                        <a href="https://www.linkedin.com/company/devsoc-iitkgp/mycompany/"
+                                                            class="clearfix" target="_blank">
+                                                            Linked In
+                                                            <span class="social-icon">
+                                                                <i class="fa fa-linkedin"></i>
+                                                            </span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="youtube-link">
+                                                        <a href="https://www.youtube.com/@devsoc.iitkgp" class="clearfix" target="_blank">
+                                                            Youtube
+                                                            <span class="social-icon">
+                                                                <i class="fa fa-youtube"></i>
+                                                            </span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <!-- // widget-extra-info-holder -->
+                                    </div>
+                                    <!-- // widget-content -->
+                                </div>
+                                <!-- // widget -->
+
+                                <div class="widget widget-recent-posts wow fadeInUp">
+                                    <div class="widget-content">
+                                        <div class="widget-title">
+                                            <h2>Recent posts</h2>
+                                        </div>
+                                        <div class="widget-extra-info-holder">
+                                            <div class="widget-recent-posts">
+                                                <div class="widget-rpag-gallery-container">
+                                                    <div class="swiper-wrapper">
+                                                        {% for notice in notices|slice:"0:4" %}
+                                                        <div class="swiper-slide">
+                                                            {% for img in images %}
+                                                            {% if img.topic.id == notice.topic.id and img.banner %}
+                                                            <img src="{{img.image.url}}" alt="...">
+                                                            {% endif %}
+                                                            {% endfor %}
+                                                            <div class="mask"></div>
+                                                            <div class="slide-content">
+                                                                <div class="post-title">
+                                                                    <h5><a href="#">{{notice.topic__name}}</a></h5>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        {% endfor %}
+                                                        <!-- <div class="swiper-slide">
+                                                            <img src="{% static 'Noticeboard/assets/dist/img/p1.jpg' %}"
+                                                                alt="...">
+                                                            <div class="mask"></div>
+                                                            <div class="slide-content ">
+                                                                <div class="post-title">
+                                                                    <h5><a href="#two">Google summer of code 2023: Data
+                                                                            and ML Domain</a></h5>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <img src="{% static 'Noticeboard/assets/dist/img/b1.jpg' %}"
+                                                                alt="...">
+                                                            <div class="mask"></div>
+                                                            <div class="slide-content ">
+                                                                <div class="post-title">
+                                                                    <h5><a href="#three">Want to try your hand at Google
+                                                                            Summer of Code but need help figuring out
+                                                                            where to start?</a></h5>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <img src="{% static 'Noticeboard/assets/dist/img/banner4.jpeg' %}"
+                                                                alt="...">
+                                                            <div class="mask"></div>
+                                                            <div class="slide-content ">
+                                                                <div class="post-title">
+                                                                    <h5><a href="#four">All the Best for Placements</a>
+                                                                    </h5>
+                                                                </div>
+                                                            </div>
+                                                        </div> -->
+
+                                                    </div>
+                                                    <div class="swiper-pagination"></div>
+                                                </div>
+                                                <!-- // widget-rpag-gallery-container -->
+                                            </div>
+                                            <!--// widget-recent-posts -->
+                                        </div>
+                                        <!-- // widget-extra-info-holder -->
+                                    </div>
+                                    <!-- // widget-content -->
+                                </div>
+                                <!-- // widget widget-newsletter -->
+
+
+
+                                <!-- // widget -->
+                                <div class="widget widget-facebook-page-box wow fadeInUp">
+                                    <div class="widget-content">
+                                        <div class="widget-title">
+                                            <h2>Facebook page</h2>
+                                        </div>
+                                        <div class="widget-extra-info-holder">
+                                            <iframe
+                                                src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fdevsoc.iitkgp&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+                                                width="340" height="500" style="border:none;overflow:hidden"
+                                                scrolling="no" frameborder="0" allowfullscreen="true"
+                                                allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                                        </div>
+                                        <!-- // widget-extra-info-holder -->
+                                    </div>
+                                    <!-- // widget-content -->
+                                </div>
+                                <!-- // widget widget-category -->
+                                <!-- <div class="widget widget-category wow fadeInUp">
+                                    <div class="widget-content">
+                                        <div class="widget-title">
+                                            <h2>Category</h2>
+                                        </div>
+                                        <div class="widget-extra-info-holder">
+                                            <ul class="widget-category-listings">
+                                                <li><a href="#one">Web Domain</a></li>
+                                                <li><a href="#two">Data and ML</a></li>
+                                                <li><a href="#three">GSOC</a></li>
+                                                <li><a href="#four">IIT KGP</a></li>
+
+                                            </ul>
+                                        </div>
+                                        // widget-extra-info-holder
+                                    </div>
+                                    // widget-content
+                                </div> -->
+                                <!-- // widget widget-category -->
+
+                                <!-- // widget -->
+                                <!-- <div class="widget widget-newsletter wow fadeInUp">
+                                    <div class="widget-content">
+                                        <div class="widget-title">
+                                            <h2>Newsletter</h2>
+                                        </div>
+                                        <div class="widget-extra-info-holder">
+                                            <div class="widget-newsletter-content">
+                                                <p>Subscribe to newsletter to be updated with all the latest trends and
+                                                    products.</p>
+                                                <form>
+                                                    <div class="form-group">
+                                                        <input type="email" name="newsletter-email"
+                                                            placeholder="Email Address ..." class="form-control">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <button type="submit" name="submit"
+                                                            class="layout-one-btn">Subscribe</button>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                            // widget-newsletter-content
+                                        </div>
+                                        // widget-extra-info-holder
+                                    </div>
+                                    // widget-content
+                                </div> -->
+                                <!-- // widget widget-newsletter -->
+
+                            </div>
+                            <!-- // sidebar-inner -->
+                        </aside>
+                        <!-- // sidebar -->
+                    </div>
+                    <!-- // col 4 -->
+                </div>
+                <!-- // main row that divies left and sidebar -->
+                <!-- <div class="pagination_holder">
+                    <ul class="pagination">
+                        <li class="disabled"><a href="#">«</a></li>
+                        <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li><a href="#">»</a></li>
+                    </ul>
+                </div> -->
+            </div>
+            <!-- // main-post-area-inner -->
+        </div>
+        <!-- // main-post-area-wrapper main-post-area-layout-one -->
+    </div>
+    <!-- // container -->
+
+    <div id="instafeed" class="instafeed owl-carousel feed-carousel">
+
+    </div>
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row footerdiv">
+                    <div class="subdiv" style="text-align: center;">
+                        <img src="{% static 'img/Devsoc_Logo.png' %}" alt="" style="height:70%; width:auto">
+                    </div>
+                    <div class="subdiv">
+                        <div class="footer-info">
+                            <h3>Developers' Society</h3>
+                            <p class="pb-3"><em>Developers’ Society is an initiative by the Tech Team, TSG to foster and encourage the
+                                    development culture of IIT Kharagpur.</em></p>
+                            <p>
+                                Technology Students' Gymkhana, <br>
+                                IIT Kharagpur<br><br>
+                                <strong>Phone:</strong> +91 93548 17605<br>
+                                <strong>Email:</strong> devsoc.iitkgp@gmail.com<br>
+                            </p>
+                            <div class="social-links mt-3">
+                                <!-- <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a> -->
+                                <a href="https://www.facebook.com/devsoc.iitkgp" class="facebook" target="_blank"><i
+                                        class="bx bxl-facebook"></i></a>
+                                <a href="https://www.instagram.com/devsoc.iitkgp/" class="instagram" target="_blank"><i
+                                        class="bx bxl-instagram"></i></a>
+                                <!-- <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a> -->
+                                <a href="https://www.linkedin.com/company/devsoc-iitkgp/mycompany/" class="linkedin"
+                                    target="_blank"><i class="bx bxl-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="subdiv footer-links">
+                        <h4>Useful Links</h4>
+                        <ul>
+                            <li><i class="bx bx-chevron-right"></i> <a href="https://docs.google.com/forms/d/e/1FAIpQLSfy2uGMAqG__YxKqoiDhOSsYoLJScyQnjy3q1F4TSP1T6BjCw/viewform?fbclid=IwAR0-SJ26q5KNFl3_fyOkZ7iYYVYwG2ndJ0sXqAnQlf2YB1xXfztMDSkS3FY">GSOC Community</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="https://developers-society-hq.slack.com/join/shared_invite/zt-1mqm2kk1c-Aum_k0VaS8DJ9k6Y7Ug8BQ?fbclid=IwAR0KaYZe0qAmgeS0barS3elH2xRqdf8KcQuYPuFblJh2t8usRi2lxHIWvAU#/shared-invite/email">Slack Community</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="https://gymkhana.iitkgp.ac.in/">TSG, IIT Kharagpur</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="http://www.iitkgp.ac.in/">IIT Kharagpur</a></li>
+                            <!-- <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li> -->
+                        </ul>
+                        <h4>Our Projects</h4>
+                        <ul>
+                            <li><i class="bx bx-chevron-right"></i> <a href="https://play.google.com/store/apps/details?id=com.apnainsti&fbclid=IwAR2n5vQApgKpVXTXjcVD_3iXR-44UCkC0jxMmwRdTZxBb4PtvmlpjcrN1R0&pli=1">ApnaInsti</a></li>
+                            <!-- <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li> -->
+                        </ul>
+                    </div>
+
+                    <!-- <div class="col-lg-2 col-md-6 footer-links">
+                        <h4>Our Services</h4>
+                        <ul>
+                            <li><i class="bx bx-chevron-right"></i> <a href="https://play.google.com/store/apps/details?id=com.apnainsti&fbclid=IwAR2n5vQApgKpVXTXjcVD_3iXR-44UCkC0jxMmwRdTZxBb4PtvmlpjcrN1R0&pli=1">ApnaInsti</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
+                        </ul>
+                    </div> -->
+
+                    <div class="subdiv footer-newsletter" style="text-align:center; margin-left: 225px;">
+                        <!-- <h4>Join our slack community</h4> -->
+                        <p>Subscribe to our newsletter for regular updates.</p>
+                        <form action="" method="POST" id="frmSubmit">
+                            {% csrf_token %}
+                            <input type="email" name="Email" placeholder="Enter your email"><input type="submit" value="Subscribe" id="btnSubmit">
+                        </form>
+                        <h4 style="margin-top: 10px;">Join our slack community</h4>
+                        <img src="{% static 'img/slack_devsoc.png' %}" alt="" style="width: auto; height:50%; ">
+                        
+                        <!-- <img src="{% static 'img/slack_devsoc.png' %}" alt="" style="width: auto; height:70%; float:left"> -->
+                        <!-- <img src="{% static 'img/slack.jpg' %}" alt=""style="width: 50%; height:50%"> -->
+
+                    </div>
+                    <!-- <div class="subdiv" style="text-align: center;">
+                        <h4>Join our slack community</h4>
+                        <img src="{% static 'img/slack_devsoc.png' %}" alt="" style="width: auto; height:70%; float:left">
+                        
+                    </div> -->
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="copyright">
+                &copy; Copyright <strong><span>Developers' Society</span></strong>. All Rights Reserved
+            </div>
+            <div class="credits">
+                <!-- All the links in the footer should remain intact. -->
+                <!-- You can delete the links only if you purchased the pro version. -->
+                <!-- Licensing information: https://bootstrapmade.com/license/ -->
+                <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/bootslander-free-bootstrap-landing-page-template/ -->
+                Designed by <a href="https://www.facebook.com/devsoc.iitkgp">Developers' Society</a>
+            </div>
+        </div>
+    </footer><!-- End Footer -->
+
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+        class="bi bi-arrow-up-short"></i></a>
+<div id="preloader"></div>
+
+<!-- Vendor JS Files -->
+<script src="{% static 'vendor/purecounter/purecounter_vanilla.js' %}"></script>
+<script src="{% static 'vendor/aos/aos.js' %}"></script>
+<script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+<script src="{% static 'vendor/glightbox/js/glightbox.min.js' %}"></script>
+<script src="{% static 'vendor/swiper/swiper-bundle.min.js' %}"></script>
+<script src="{% static 'vendor/php-email-form/validate.js' %}"></script>
+
+<!-- Template Main JS File -->
+<script src="{% static 'js/notice.js' %}"></script>
+
+    <script src="{% static 'Noticeboard/assets/dist/js/bundle.min.js' %}"></script>
+
+    <script src="{% static 'Noticeboard/assets/dist/js/scripts.js' %}"></script>
+
+    <script>
+
+
+    </script>
+
+</body>
+
+
+
+
+<!-- Mirrored from offshorethemes.com/html/optimistic-blog/demo/index.php by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 06 Jan 2023 17:23:09 GMT -->
+
+</html>

@@ -1,0 +1,1081 @@
+{% extends 'base.html' %}
+{% load static %}
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Developers' Society</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+ -->
+  <!-- Favicons -->
+  <!-- <link href="{% static 'img/DevSoc_Logo.png' %}" rel="icon">
+  <link href="{% static 'img/apple-touch-icon.png' %}" rel="apple-touch-icon"> -->
+
+  <!-- Google Fonts -->
+  <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet"> -->
+
+  <!-- Vendor CSS Files -->
+  <!-- <link href="{% static 'vendor/aos/aos.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/remixicon/remixicon.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet"> -->
+
+  <!-- Template Main CSS File -->
+  <!-- <link href="{% static 'css/style.css' %}" rel="stylesheet"> -->
+
+  <!-- =======================================================
+  * Template Name: Bootslander - v4.10.0
+  * Template URL: https://bootstrapmade.com/bootslander-free-bootstrap-landing-page-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+<!-- </head> -->
+
+<!-- <body> -->
+
+  <!-- ======= Header ======= -->
+  <!-- <header id="header" class="fixed-top d-flex align-items-center header-transparent">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <div class="logo">
+        <h1><a href="index.html"><span><img src="{% static 'img/DevSoc_Logo.png' %}" alt=""></span></a></h1> -->
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+      <!-- </div> -->
+
+      <!-- <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <li><a class="nav-link scrollto" href="#features">Features</a></li>
+          <li><a class="nav-link scrollto" href="#gallery">Gallery</a></li>
+          <li><a class="nav-link scrollto" href="#team">Team</a></li>
+          <li><a class="nav-link scrollto" href="#pricing">Pricing</a></li>
+          <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#">Drop Down 1</a></li>
+              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="#">Deep Drop Down 1</a></li>
+                  <li><a href="#">Deep Drop Down 2</a></li>
+                  <li><a href="#">Deep Drop Down 3</a></li>
+                  <li><a href="#">Deep Drop Down 4</a></li>
+                  <li><a href="#">Deep Drop Down 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Drop Down 2</a></li>
+              <li><a href="#">Drop Down 3</a></li>
+              <li><a href="#">Drop Down 4</a></li>
+            </ul>
+          </li>
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i> -->
+      <!-- </nav> -->
+      <!-- .navbar -->
+
+    <!-- </div> -->
+  <!-- </header> -->
+  <!-- End Header -->
+  
+  {% block content %}
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero">
+
+    <div class="container">
+      <div class="row justify-content-between">
+        <div class="col-lg-7 pt-5 pt-lg-0 order-2 order-lg-1 d-flex align-items-center">
+          <div data-aos="zoom-out">
+            <!-- <h1>Developers' Society</h1>
+            <h2>IIT Kharagpur</h2> -->
+            <!-- <div class="text-center text-lg-start">
+              <a href="#about" class="btn-get-started scrollto">Get Started</a>
+            </div> -->
+          </div>
+        </div>
+        <div style="display: inline;">
+          <img src="{% static 'img/Asset5.svg' %}" alt="" class="animated asset5 sized">
+          <img src="{% static 'img/Asset6.svg' %}" alt="" class="animated asset6 sized">
+          <!-- <img src="{% static 'img/Asset7.svg' %}" alt="" style="width: 100px; height:100px;position:absolute;top:10px" class="animated asset6"> -->
+          <img src="{% static 'img/Asset8.svg' %}" alt="" style="position:absolute;top:7%;left:30%" class="animated asset6 sized">
+          <img src="{% static 'img/Asset9.svg' %}" alt="" style="position:absolute;top:7%;left:70%" class="animated asset6 sized">
+          <!-- <img src="{% static 'img/Asset10.svg' %}" alt="" style="width: 100px; height:100px;position:absolute;top:30%;left:15%" class="animated asset6"> -->
+        </div>
+        <!-- <div class="col-lg-4 order-1 order-lg-2 hero-img" data-aos="zoom-out" data-aos-delay="300">
+          <img src="{% static 'img/DevSoc_Logo.png' %}" class="img-fluid animated" alt="">
+        </div> -->
+      </div>
+      <!-- <div class="row">
+        <video src="{% static 'img/app.mp4' %}" autoplay loop muted></video>
+      </div> -->
+    </div>
+
+    <svg class="hero-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28 " preserveAspectRatio="none">
+      <defs>
+        <path id="wave-path" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z">
+      </defs>
+      <g class="wave1">
+        <use xlink:href="#wave-path" x="50" y="3" fill="rgba(255,255,255, .1)">
+      </g>
+      <g class="wave2">
+        <use xlink:href="#wave-path" x="50" y="0" fill="rgba(255,255,255, .2)">
+      </g>
+      <g class="wave3">
+        <use xlink:href="#wave-path" x="50" y="9" fill="#fff">
+      </g>
+    </svg>
+
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container-fluid">
+        <div class="row" style="text-align: center;">
+          <h1 style="margin-bottom: 50px;">Presenting to you the very first project of <b>Developers' Society</b></h1>
+        </div>
+
+        <div class="row">
+          <iframe width="560" height="600" src="https://www.youtube.com/embed/L9ee5lfeP-8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <div class="col-xl-7 col-lg-6 icon-boxes d-flex flex-column align-items-stretch justify-content-center py-5 px-lg-5" data-aos="fade-left">
+            <h3>ApnaInsti</h3>
+            <p>Get ready for the ultimate KGP experience with ApnaInsti - the ultimate tool for staying connected with all happenings on campus. ApnaInsti offers features like slot booking, campus events, buy and sell, mess menu and much more. Never miss out on important information again! Download now and make your campus life easier! </p>
+
+            <!-- <button class="btn btn-primary">Download Now</button> -->
+            <a href="https://play.google.com/store/apps/details?id=com.apnainsti&fbclid=IwAR2n5vQApgKpVXTXjcVD_3iXR-44UCkC0jxMmwRdTZxBb4PtvmlpjcrN1R0&pli=1" style="width:100% !important"><button class="btn btn-primary">Download Now</button></a>
+
+            <!-- <div class="icon-box" data-aos="zoom-in" data-aos-delay="100">
+              <div class="icon"><i class="bx bx-fingerprint"></i></div>
+              <h4 class="title"><a href="">Lorem Ipsum</a></h4>
+              <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+            </div>
+
+            <div class="icon-box" data-aos="zoom-in" data-aos-delay="200">
+              <div class="icon"><i class="bx bx-gift"></i></div>
+              <h4 class="title"><a href="">Nemo Enim</a></h4>
+              <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
+            </div>
+
+            <div class="icon-box" data-aos="zoom-in" data-aos-delay="300">
+              <div class="icon"><i class="bx bx-atom"></i></div>
+              <h4 class="title"><a href="">Dine Pad</a></h4>
+              <p class="description">Explicabo est voluptatum asperiores consequatur magnam. Et veritatis odit. Sunt aut deserunt minus aut eligendi omnis</p>
+            </div> -->
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!-- End About Section -->
+
+    <!-- ======= Features Section ======= -->
+    <section id="features" class="features">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+          <h2>Features</h2>
+          <p>Check The Features</p>
+        </div>
+
+        <div class="row" data-aos="fade-left">
+          <div class="col-lg-3 col-md-4">
+            <div class="icon-box" data-aos="zoom-in" data-aos-delay="50">
+              <i class="ri-store-line" style="color: #ffbb2c;"></i>
+              <h3><a href="">Buy and sell</a></h3>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
+            <div class="icon-box" data-aos="zoom-in" data-aos-delay="100">
+              <i class="ri-bar-chart-box-line" style="color: #5578ff;"></i>
+              <h3><a href="">Results</a></h3>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
+            <div class="icon-box" data-aos="zoom-in" data-aos-delay="150">
+              <i class="ri-calendar-todo-line" style="color: #e80368;"></i>
+              <h3><a href="">Slot booking</a></h3>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 mt-4 mt-lg-0">
+            <div class="icon-box" data-aos="zoom-in" data-aos-delay="200">
+              <i class="ri-contacts-line" style="color: #e361ff;"></i>
+              <h3><a href="">Contacts</a></h3>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 mt-4">
+            <div class="icon-box" data-aos="zoom-in" data-aos-delay="250">
+              <i class="ri-building-line" style="color: #47aeff;"></i>
+              <h3><a href="">Halls</a></h3>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 mt-4">
+            <div class="icon-box" data-aos="zoom-in" data-aos-delay="300">
+              <i class="ri-mic-line" style="color: #ffa76e;"></i>
+              <h3><a href="">Announcements</a></h3>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 mt-4">
+            <div class="icon-box" data-aos="zoom-in" data-aos-delay="350">
+              <i class="ri-file-list-3-line" style="color: #11dbcf;"></i>
+              <h3><a href="">Events</a></h3>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 mt-4">
+            <div class="icon-box" data-aos="zoom-in" data-aos-delay="400">
+              <i class="ri-menu-line" style="color: #4233ff;"></i>
+              <h3><a href="">Mess menu</a></h3>
+            </div>
+          </div>
+          <!-- <div class="col-lg-3 col-md-4 mt-4">
+            <div class="icon-box" data-aos="zoom-in" data-aos-delay="450">
+              <i class="ri-anchor-line" style="color: #b2904f;"></i>
+              <h3><a href="">Dirada Pack</a></h3>
+            </div>
+          </div> -->
+          <!-- <div class="col-lg-3 col-md-4 mt-4">
+            <div class="icon-box" data-aos="zoom-in" data-aos-delay="500">
+              <i class="ri-disc-line" style="color: #b20969;"></i>
+              <h3><a href="">Moton Ideal</a></h3>
+            </div>
+          </div> -->
+          <!-- <div class="col-lg-3 col-md-4 mt-4">
+            <div class="icon-box" data-aos="zoom-in" data-aos-delay="550">
+              <i class="ri-base-station-line" style="color: #ff5828;"></i>
+              <h3><a href="">Verdo Park</a></h3>
+            </div>
+          </div> -->
+          <!-- <div class="col-lg-3 col-md-4 mt-4">
+            <div class="icon-box" data-aos="zoom-in" data-aos-delay="600">
+              <i class="ri-fingerprint-line" style="color: #29cc61;"></i>
+              <h3><a href="">Flavor Nivelanda</a></h3>
+            </div>
+          </div> -->
+        </div>
+
+      </div>
+    </section><!-- End Features Section -->
+
+    <!-- ======= Counts Section ======= -->
+    <section id="counts" class="counts">
+      <div class="container">
+
+        <div class="row" data-aos="fade-up">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="count-box">
+              <i class="bi bi-emoji-smile"></i>
+              <span data-purecounter-start="0" data-purecounter-end="3.8" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Rating</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mt-5 mt-md-0">
+            <div class="count-box">
+              <i class="bi bi-person-lines-fill"></i>
+              <span data-purecounter-start="0" data-purecounter-end="11" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Team members</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
+            <div class="count-box">
+              <i class="bi bi-headset"></i>
+              <span data-purecounter-start="0" data-purecounter-end="1444" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Registrations</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
+            <div class="count-box">
+              <i class="bi bi-download"></i>
+              <span data-purecounter-start="0" data-purecounter-end="2000" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Downloads</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Counts Section -->
+
+    <!-- ======= Details Section ======= -->
+    <section id="details" class="details">
+      <div class="container">
+
+        <div class="row content">
+          <div class="col-md-4" data-aos="fade-right">
+            <img src="{% static 'img/details-4.png' %}" class="img-fluid" alt="" style="width: 80%; height:auto">
+          </div>
+          <div class="col-md-8 pt-4" data-aos="fade-up">
+            <h1 style="font-family: 'Ubuntu', sans-serif; font-size:50px; margin-bottom:90px; color:#4233ff; text-align:center"><b>Launching a new world for developers</b></h1>
+            <p style="font-family: 'Ubuntu', sans-serif;font-size:20px">In light of the need to improve existing applications and the potential for automating vrious workflows on campus, the Developers' Society is an initiative to bring together a group of individuals who are motivated and interested in encouraging the development culture by taking various initiatives within the institute and developing new applications that benefit the entire KGP community.</p>
+            <!-- <ul>
+              <li><i class="bi bi-check"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+              <li><i class="bi bi-check"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+              <li><i class="bi bi-check"></i> Iure at voluptas aspernatur dignissimos doloribus repudiandae.</li>
+              <li><i class="bi bi-check"></i> Est ipsa assumenda id facilis nesciunt placeat sed doloribus praesentium.</li>
+            </ul> -->
+            <!-- <p>
+              Voluptas nisi in quia excepturi nihil voluptas nam et ut. Expedita omnis eum consequatur non. Sed in asperiores aut repellendus. Error quisquam ab maiores. Quibusdam sit in officia
+            </p> -->
+          </div>
+        </div>
+
+        <div class="row content">
+          <div class="col-md-4 order-1 order-md-2" data-aos="fade-left">
+            <img src="{% static 'img/details-3.png' %}" class="img-fluid" alt="" style="width: 80%; height:auto">
+          </div>
+          <div class="col-md-8 pt-5 order-2 order-md-1" data-aos="fade-up">
+            <h1 style="font-family: 'Ubuntu', sans-serif; font-size:50px; margin-bottom:90px; color:#4233ff;text-align:center;"><b>Our aim</b></h1>
+            <!-- <p class="fst-italic">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+              magna aliqua.
+            </p> -->
+            <p style="font-family: 'Ubuntu', sans-serif;font-size:20px">
+              <b>Community first</b> : Developers' Society will serve the student community as a group and as individuals.
+            </p>
+            <p style="font-family: 'Ubuntu', sans-serif;font-size:20px">
+              <b>Learn. Build. Share</b> : Developers' Society aims to promote and distribute new technologies while uplifting the students' developer community.
+            </p>
+            <p style="font-family: 'Ubuntu', sans-serif;font-size:20px">
+              <b>For KGP</b> : The Developers' Society will assist the Technology Students' Gymkhana in developing applications helpful to the student community.
+            </p>
+          </div>
+        </div>
+
+        <!-- <div class="row content">
+          <div class="col-md-4" data-aos="fade-right">
+            <img src="{% static 'img/details-3.png' %}" class="img-fluid" alt="">
+          </div>
+          <div class="col-md-8 pt-5" data-aos="fade-up">
+            <h3>Sunt consequatur ad ut est nulla consectetur reiciendis animi voluptas</h3>
+            <p>Cupiditate placeat cupiditate placeat est ipsam culpa. Delectus quia minima quod. Sunt saepe odit aut quia voluptatem hic voluptas dolor doloremque.</p>
+            <ul>
+              <li><i class="bi bi-check"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+              <li><i class="bi bi-check"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+              <li><i class="bi bi-check"></i> Facilis ut et voluptatem aperiam. Autem soluta ad fugiat.</li>
+            </ul>
+            <p>
+              Qui consequatur temporibus. Enim et corporis sit sunt harum praesentium suscipit ut voluptatem. Et nihil magni debitis consequatur est.
+            </p>
+            <p>
+              Suscipit enim et. Ut optio esse quidem quam reiciendis esse odit excepturi. Vel dolores rerum soluta explicabo vel fugiat eum non.
+            </p>
+          </div>
+        </div> -->
+
+        <!-- <div class="row content">
+          <div class="col-md-4 order-1 order-md-2" data-aos="fade-left">
+            <img src="{% static 'img/details-4.png' %}" class="img-fluid" alt="">
+          </div>
+          <div class="col-md-8 pt-5 order-2 order-md-1" data-aos="fade-up">
+            <h3>Quas et necessitatibus eaque impedit ipsum animi consequatur incidunt in</h3>
+            <p class="fst-italic">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+              magna aliqua.
+            </p>
+            <p>
+              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+              culpa qui officia deserunt mollit anim id est laborum
+            </p>
+            <ul>
+              <li><i class="bi bi-check"></i> Et praesentium laboriosam architecto nam .</li>
+              <li><i class="bi bi-check"></i> Eius et voluptate. Enim earum tempore aliquid. Nobis et sunt consequatur. Aut repellat in numquam velit quo dignissimos et.</li>
+              <li><i class="bi bi-check"></i> Facilis ut et voluptatem aperiam. Autem soluta ad fugiat.</li>
+            </ul>
+          </div>
+        </div> -->
+
+      </div>
+    </section><!-- End Details Section -->
+
+    <!-- ======= Gallery Section ======= -->
+    <!-- <section id="gallery" class="gallery">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+          <h2>Gallery</h2>
+          <p>Check our Gallery</p>
+        </div>
+
+        <div class="row g-0" data-aos="fade-left">
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="100">
+              <a href="{% static 'img/gallery/gallery-1.jpg' %}" class="gallery-lightbox">
+                <img src="{% static 'img/gallery/gallery-1.jpg' %}" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="150">
+              <a href="{% static 'img/gallery/gallery-2.jpg' %}" class="gallery-lightbox">
+                <img src="{% static 'img/gallery/gallery-2.jpg' %}" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="200">
+              <a href="{% static 'img/gallery/gallery-3.jpg' %}" class="gallery-lightbox">
+                <img src="{% static 'img/gallery/gallery-3.jpg' %}" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="250">
+              <a href="{% static 'img/gallery/gallery-4.jpg' %}" class="gallery-lightbox">
+                <img src="{% static 'img/gallery/gallery-4.jpg' %}" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="300">
+              <a href="{% static 'img/gallery/gallery-5.jpg' %}" class="gallery-lightbox">
+                <img src="{% static 'img/gallery/gallery-5.jpg' %}" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="350">
+              <a href="{% static 'img/gallery/gallery-6.jpg' %}" class="gallery-lightbox">
+                <img src="{% static 'img/gallery/gallery-6.jpg' %}" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="400">
+              <a href="{% static 'img/gallery/gallery-7.jpg' %}" class="gallery-lightbox">
+                <img src="{% static 'img/gallery/gallery-7.jpg' %}" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="450">
+              <a href="{% static 'img/gallery/gallery-8.jpg' %}" class="gallery-lightbox">
+                <img src="{% static 'img/gallery/gallery-8.jpg' %}" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+      </div> -->
+    <!-- </section>End Gallery Section -->
+
+    <!-- ======= Testimonials Section ======= -->
+    <section id="testimonials" class="testimonials">
+      <div class="container">
+
+        <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="{% static 'img/LinusTorvalds.jpeg' %}" class="testimonial-img" alt="">
+                <h3>Linus Torvalds
+                </h3>
+                <!-- <h4>Ceo &amp; Founder</h4> -->
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Talk is cheap. Show me the code.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="{% static 'img/CoryHouse.jpg' %}" class="testimonial-img" alt="">
+                <h3> Cory House
+                </h3>
+                <!-- <h4>Designer</h4> -->
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Code is like humor. When you have to explain it, it's bad
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="{% static 'img/FilipeFortes.jpeg' %}" class="testimonial-img" alt="">
+                <h3>Filipe Fortes</h3>
+                <!-- <h4>Store Owner</h4> -->
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Debugging is like being a detective in a crime movie where you are also the murderer.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="{% static 'img/MartinFowler.jpg' %}" class="testimonial-img" alt="">
+                <h3> Martin Fowler</h3>
+                <!-- <h4>Freelancer</h4> -->
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Any fool can write code that a computer can understand. Good programmers write code that humans can understand
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="{% static 'img/HalAbelsonandGeraldSussman.jpg' %}" class="testimonial-img" alt="">
+                <h3>Hal Abelson and Gerald Sussman
+                </h3>
+                <!-- <h4>Entrepreneur</h4> -->
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Programs must be written for people to read, and only incidentally for machines to execute.<i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section><!-- End Testimonials Section -->
+
+    <!-- ======= Team Section ======= -->
+    <section id="team" class="team">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+          <h2>Team</h2>
+          <p>Our Great Team</p>
+        </div>
+
+        <div class="row" data-aos="fade-left" id="cards">
+          <div class="twelve">
+            <h1>Executive Head</h1>
+          </div>
+          {% for member in team %}
+          {% if member.title.name == 'Executive Head' %}
+          <div class="col-lg-3 col-md-6 card_child">
+            <div class="member" data-aos="zoom-in" data-aos-delay="100">
+              <div class="pic"><img src="{{member.image.url}}" class="img-fluid card-img" alt="" style="height: 300px; width: 300px;"></div>
+              <div class="member-info">
+                <h4 style="font-family: 'Merriweather Sans', sans-serif;">{{member.name}}</h4>
+                <p style="font-family: 'Merriweather Sans', sans-serif;">{{member.title.name}}</p>
+                <div class="social">
+                  <!-- <a href=""><i class="bi bi-twitter"></i></a> -->
+                  <a href="{{member.fbLink}}" target="_blank"><i class="bi bi-facebook"></i></a>
+                  <a href="{{member.emailLink}}" target="_blank"><i class="bi bi-envelope-fill"></i></a>
+                  <a href="{{member.linkedinLink}}" target="_blank"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          {% endif %}
+          {% endfor %}
+        </div>
+        
+        <div class="row" data-aos="fade-left" id="cards">
+          <div class="twelve">
+            <h1>Finance & Operations Heads</h1>
+          </div>
+          {% for member in team %}
+          {% if member.title.name == "Finance & Operations Head" %}
+          <div class="col-lg-3 col-md-6 card_child">
+            <div class="member" data-aos="zoom-in" data-aos-delay="100">
+              <div class="pic"><img src="{{member.image.url}}" class="img-fluid card-img" alt="" style="height: 300px; width: 300px;"></div>
+              <div class="member-info">
+                <h4 style="font-family: 'Merriweather Sans', sans-serif;">{{member.name}}</h4>
+                <p style="font-family: 'Merriweather Sans', sans-serif;">{{member.title.name}}</p>
+                <div class="social">
+                  <!-- <a href=""><i class="bi bi-twitter"></i></a> -->
+                  <a href="{{member.fbLink}}" target="_blank"><i class="bi bi-facebook"></i></a>
+                  <a href="{{member.emailLink}}" target="_blank"><i class="bi bi-envelope-fill"></i></a>
+                  <a href="{{member.linkedinLink}}" target="_blank"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          {% endif %}
+          {% endfor %}
+        </div>
+
+        
+        <div class="row" data-aos="fade-left" id="cards">
+          <div class="twelve">
+            <h1>Outreach Heads</h1>
+          </div>
+          {% for member in team %}
+          {% if member.title.name == "Outreach Head" %}
+          <div class="col-lg-3 col-md-6 card_child">
+            <div class="member" data-aos="zoom-in" data-aos-delay="100">
+              <div class="pic"><img src="{{member.image.url}}" class="img-fluid card-img" alt="" style="height: 300px; width: 300px;"></div>
+              <div class="member-info">
+                <h4 style="font-family: 'Merriweather Sans', sans-serif;">{{member.name}}</h4>
+                <p style="font-family: 'Merriweather Sans', sans-serif;">{{member.title.name}}</p>
+                <div class="social">
+                  <!-- <a href=""><i class="bi bi-twitter"></i></a> -->
+                  <a href="{{member.fbLink}}" target="_blank"><i class="bi bi-facebook"></i></a>
+                  <a href="{{member.emailLink}}" target="_blank"><i class="bi bi-envelope-fill"></i></a>
+                  <a href="{{member.linkedinLink}}" target="_blank"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          {% endif %}
+          {% endfor %}
+        </div>
+        
+        <div class="row" data-aos="fade-left" id="cards">
+          <div class="twelve" style="text-align: center;margin:auto">
+            <h1>Development Heads</h1>
+          </div>
+          {% for member in team %}
+          {% if member.title.name == "Development Head" %}
+          <div class="col-lg-3 col-md-6 card_child">
+            <div class="member" data-aos="zoom-in" data-aos-delay="100">
+              <div class="pic"><img src="{{member.image.url}}" class="img-fluid card-img" alt="" style="height: 300px; width: 300px;"></div>
+              <div class="member-info">
+                <h4 style="font-family: 'Merriweather Sans', sans-serif;">{{member.name}}</h4>
+                <p style="font-family: 'Merriweather Sans', sans-serif;">{{member.title.name}}</p>
+                <div class="social">
+                  <!-- <a href=""><i class="bi bi-twitter"></i></a> -->
+                  <a href="{{member.fbLink}}" target="_blank"><i class="bi bi-facebook"></i></a>
+                  <a href="{{member.emailLink}}" target="_blank"><i class="bi bi-envelope-fill"></i></a>
+                  <a href="{{member.linkedinLink}}" target="_blank"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          {% endif %}
+          {% endfor %}
+        </div>
+<!-- 
+        <div class="row" data-aos="fade-left" id="cards_later">
+
+          {% for member in team2 %}
+          <div class="col-lg-3 col-md-6 card_child">
+            <div class="member" data-aos="zoom-in" data-aos-delay="100">
+              <div class="pic"><img src="{{member.image.url}}" class="img-fluid" alt="" style="height: 300px; width: 300px;"></div>
+              <div class="member-info">
+                <h4>{{member.name}}</h4>
+                <span>{{member.title}}</span>
+                <div class="social">
+                  <!-- <a href=""><i class="bi bi-twitter"></i></a> -->
+                  <!-- <a href="{{member.fbLink.url}}"><i class="bi bi-facebook"></i></a>
+                  <a href="{{member.emailLink.url}}"><i class="bi bi-instagram"></i></a>
+                  <a href="{{member.linkedinLink.url}}"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          {% endfor %}
+        </div> -->
+        <!-- <div class="row" data-aos="fade-left" id="cards_later">
+
+          <div class="col-lg-3 col-md-6 card_child">
+            <div class="member" data-aos="zoom-in" data-aos-delay="100">
+              <div class="pic"><img src="{% static 'img/team/team-1.jpg' %}" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Walter White</h4>
+                <span>Chief Executive Officer</span>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mt-5 mt-md-0 card_child">
+            <div class="member" data-aos="zoom-in" data-aos-delay="200">
+              <div class="pic"><img src="{% static 'img/team/team-2.jpg' %}" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Sarah Jhonson</h4>
+                <span>Product Manager</span>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mt-5 mt-md-0 card_child">
+            <div class="member" data-aos="zoom-in" data-aos-delay="200">
+              <div class="pic"><img src="{% static 'img/team/team-2.jpg' %}" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Sarah Jhonson</h4>
+                <span>Product Manager</span>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div> -->
+
+      </div>
+    </section><!-- End Team Section -->
+
+    <!-- ======= Pricing Section ======= -->
+    <section id="pricing" class="pricing">
+      <!-- <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+          <h2>Pricing</h2>
+          <p>Check our Pricing</p>
+        </div>
+
+        <div class="row" data-aos="fade-left">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="box" data-aos="zoom-in" data-aos-delay="100">
+              <h3>Free</h3>
+              <h4><sup>$</sup>0<span> / month</span></h4>
+              <ul>
+                <li>Aida dere</li>
+                <li>Nec feugiat nisl</li>
+                <li>Nulla at volutpat dola</li>
+                <li class="na">Pharetra massa</li>
+                <li class="na">Massa ultricies mi</li>
+              </ul>
+              <div class="btn-wrap">
+                <a href="#" class="btn-buy">Buy Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mt-4 mt-md-0">
+            <div class="box featured" data-aos="zoom-in" data-aos-delay="200">
+              <h3>Business</h3>
+              <h4><sup>$</sup>19<span> / month</span></h4>
+              <ul>
+                <li>Aida dere</li>
+                <li>Nec feugiat nisl</li>
+                <li>Nulla at volutpat dola</li>
+                <li>Pharetra massa</li>
+                <li class="na">Massa ultricies mi</li>
+              </ul>
+              <div class="btn-wrap">
+                <a href="#" class="btn-buy">Buy Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mt-4 mt-lg-0">
+            <div class="box" data-aos="zoom-in" data-aos-delay="300">
+              <h3>Developer</h3>
+              <h4><sup>$</sup>29<span> / month</span></h4>
+              <ul>
+                <li>Aida dere</li>
+                <li>Nec feugiat nisl</li>
+                <li>Nulla at volutpat dola</li>
+                <li>Pharetra massa</li>
+                <li>Massa ultricies mi</li>
+              </ul>
+              <div class="btn-wrap">
+                <a href="#" class="btn-buy">Buy Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mt-4 mt-lg-0">
+            <div class="box" data-aos="zoom-in" data-aos-delay="400">
+              <span class="advanced">Advanced</span>
+              <h3>Ultimate</h3>
+              <h4><sup>$</sup>49<span> / month</span></h4>
+              <ul>
+                <li>Aida dere</li>
+                <li>Nec feugiat nisl</li>
+                <li>Nulla at volutpat dola</li>
+                <li>Pharetra massa</li>
+                <li>Massa ultricies mi</li>
+              </ul>
+              <div class="btn-wrap">
+                <a href="#" class="btn-buy">Buy Now</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div> -->
+    </section><!-- End Pricing Section -->
+
+    <!-- ======= F.A.Q Section ======= -->
+    <section id="faq" class="faq section-bg">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+          <h2>F.A.Q</h2>
+          <p>Frequently Asked Questions</p>
+        </div>
+
+        <div class="faq-list">
+          <ul>
+            <li data-aos="fade-up"> 
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-1">Which is the most popular programming language between developers ? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-1" class="collapse show" data-bs-parent=".faq-list">
+                <p>Javascript is the most popular language.</p>
+              </div>
+            </li>
+             
+            <li data-aos="fade-up" data-aos-delay="100">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-2" class="collapsed">What all platforms is ApnaInsti app available in ? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-2" class="collapse" data-bs-parent=".faq-list">
+                <p>Currently, ApnaInsti app is compatible for Android users and available in Google Play Store.
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="200">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-3" class="collapsed">What is the aim of the Developers' Society ? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-3" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                  The foundation of the Developer's Society is led to ensure the following purposes:<br>
+<b>Community First</b> - Developers' Society will serve the student community as a group and as individuals.<br>
+
+<b>Learn. Build. Share</b> - Developers' Society aims to promote and distribute new technologies while uplifting the students' developer community.<br>
+
+<b>For KGP</b> - The Developers' Society will assist the Technology Students' Gymkhana in developing applications helpful to the student community.<br>
+</p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="300">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-4" class="collapsed">How to Sign Up in ApnaInsti ?<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-4" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                  You can Sign Up in ApnaInsti using your institute email ID.</p>
+              </div>
+            </li>
+
+            <!-- <li data-aos="fade-up" data-aos-delay="400">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-5" class="collapsed">Tortor vitae purus faucibus ornare. Varius vel pharetra vel turpis nunc eget lorem dolor? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-5" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                  Laoreet sit amet cursus sit amet dictum sit amet justo. Mauris vitae ultricies leo integer malesuada nunc vel. Tincidunt eget nullam non nisi est sit amet. Turpis nunc eget lorem dolor sed. Ut venenatis tellus in metus vulputate eu scelerisque.
+                </p>
+              </div>
+            </li> -->
+
+          </ul>
+        </div>
+
+      </div>
+    </section><!-- End F.A.Q Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+          <h2>Contact</h2>
+          <p>Contact Us</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-4" data-aos="fade-right" data-aos-delay="100">
+            <div class="info">
+              <div class="address">
+                <i class="bi bi-geo-alt"></i>
+                <h4>Location:</h4>
+                <p>Technology Students' Gymkhana, IIT Kharagpur</p>
+              </div>
+
+              <div class="email">
+                <i class="bi bi-envelope"></i>
+                <h4>Email:</h4>
+                <p>devsoc.iitkgp@gmail.com</p>
+              </div>
+
+              <div class="phone">
+                <i class="bi bi-phone"></i>
+                <h4>Call:</h4>
+                <p>+91 93548 17605</p>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="col-lg-8 mt-5 mt-lg-0" data-aos="fade-left" data-aos-delay="200">
+            <script>
+              function popUp(e){
+                let email = document.getElementById("email").value;
+                if (email.includes("@gmail.com")){
+                  alert("Thanks for contacting us!");
+                }else if(email.includes("@kgpian.iitkgp.ac.in")){
+                  alert("Thanks for contacting us!");
+                }else if(email.includes("@iitkgp.ac.in")){
+                  alert("Thanks for contacting us!");
+                }else{
+                  alert("Invalid email!");
+                  e.preventDefault();
+                }
+              }
+            </script>
+            <form action="contact" method="post" onsubmit="popUp(event)">
+              {% csrf_token %}
+              <!-- {{ form }} -->
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <!-- <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required> -->
+                  {{form.name}}
+                </div>
+                <div class="col-md-6 form-group mt-3 mt-md-0">
+                  <!-- <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required> -->
+                  {{form.email}}
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                <!-- <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required> -->
+                {{form.subject}}
+              </div>
+              <div class="form-group mt-3">
+                <!-- <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea> -->
+                {{form.message}}
+              </div>
+              <!-- <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div> -->
+              <div class="text-center"><button type="submit" class="btn btn-success">Send Message</button></div>
+            </form>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  {% endblock %}
+
+  <!-- ======= Footer ======= -->
+  <!-- <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6">
+            <div class="footer-info">
+              <h3>Developers' Society</h3>
+              <p class="pb-3"><em>Developers’ Society is an initiative to foster and encourage the development culture of IIT Kharagpur.</em></p>
+              <p>
+                A108 Adam Street <br>
+                NY 535022, USA<br><br>
+                <strong>Phone:</strong> +1 5589 55488 55<br>
+                <strong>Email:</strong> devsoc.iitkgp@gmail.com<br>
+              </p>
+              <div class="social-links mt-3"> -->
+                <!-- <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a> -->
+                <!-- <a href="https://www.facebook.com/devsoc.iitkgp" class="facebook" target="_blank"><i class="bx bxl-facebook"></i></a>
+                <a href="https://www.instagram.com/devsoc.iitkgp/" class="instagram" target="_blank"><i class="bx bxl-instagram"></i></a> -->
+                <!-- <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a> -->
+                <!-- <a href="https://www.linkedin.com/company/devsoc-iitkgp/mycompany/" class="linkedin" target="_blank"><i class="bx bxl-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-newsletter">
+            <h4>Our Newsletter</h4>
+            <p>Subscribe to our newsletter for regular updates.</p>
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="Subscribe">
+            </form>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Developers' Society</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits"> -->
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/bootslander-free-bootstrap-landing-page-template/ -->
+        <!-- Designed by <a href="https://www.facebook.com/devsoc.iitkgp">Developers' Society</a>
+      </div>
+    </div>
+  </footer> -->
+  <!-- End Footer -->
+<!-- 
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <div id="preloader"></div> -->
+
+  <!-- Vendor JS Files -->
+  <!-- <script src="{% static 'vendor/purecounter/purecounter_vanilla.js' %}"></script>
+  <script src="{% static 'vendor/aos/aos.js' %}"></script>
+  <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'vendor/glightbox/js/glightbox.min.js' %}"></script>
+  <script src="{% static 'vendor/swiper/swiper-bundle.min.js' %}"></script>
+  <script src="{% static 'vendor/php-email-form/validate.js' %}"></script> -->
+
+  <!-- Template Main JS File -->
+  <!-- <script src="{% static 'js/main.js' %}"></script>
+
+</body>
+
+</html> -->

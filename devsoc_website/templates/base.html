@@ -1,0 +1,237 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Developers' Society</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="{% static 'img/DevSoc_Logo.png' %}" rel="icon">
+    <link href="{% static 'img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+    <link rel="stylesheet" href="https://kit.fontawesome.com/3914e32c9c.css" crossorigin="anonymous">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Vendor CSS Files -->
+    <link href="{% static 'vendor/aos/aos.css' %}" rel="stylesheet">
+    <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+    <link href="{% static 'vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
+    <link href="{% static 'vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+    <link href="{% static 'vendor/remixicon/remixicon.css' %}" rel="stylesheet">
+    <link href="{% static 'vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
+
+    <!-- =======================================================
+  * Template Name: Bootslander - v4.10.0
+  * Template URL: https://bootstrapmade.com/bootslander-free-bootstrap-landing-page-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top d-flex align-items-center header-transparent">
+        <div class="container d-flex align-items-center justify-content-between">
+
+            <div class="logo">
+                <h1><a href="index.html"><span><img src="{% static 'img/DevSoc_Logo.png' %}" alt=""></span></a></h1>
+                <!-- Uncomment below if you prefer to use an image logo -->
+                <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+            </div>
+
+            <nav id="navbar" class="navbar">
+                <ul>
+                    <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+                    <li><a class="nav-link scrollto" href="{% url 'about' %}">About</a></li>
+                    <!-- <li><a class="nav-link scrollto" href="{% url 'resources' %}">Resources</a></li> -->
+                    <li><a class="nav-link scrollto" href="{% url 'noticeboard' %}">Noticeboard</a></li>
+                    <li><a class="nav-link scrollto" href="#team">Team</a></li>
+                    <!-- <li><a class="nav-link scrollto" href="{% url 'forum' %}">Forum</a></li>
+                    <li><a class="nav-link scrollto" href="{% url 'login' %}">Login</a></li> -->
+                    <!-- <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
+                        <ul>
+                            <li><a href="#">Drop Down 1</a></li>
+                            <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i
+                                        class="bi bi-chevron-right"></i></a>
+                                <ul>
+                                    <li><a href="#">Deep Drop Down 1</a></li>
+                                    <li><a href="#">Deep Drop Down 2</a></li>
+                                    <li><a href="#">Deep Drop Down 3</a></li>
+                                    <li><a href="#">Deep Drop Down 4</a></li>
+                                    <li><a href="#">Deep Drop Down 5</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Drop Down 2</a></li>
+                            <li><a href="#">Drop Down 3</a></li>
+                            <li><a href="#">Drop Down 4</a></li>
+                        </ul>
+                    </li> -->
+                    <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+                </ul>
+                <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav><!-- .navbar -->
+
+        </div>
+    </header><!-- End Header -->
+    {% block content %}
+    
+    <!-- Content goes here -->
+
+    {% endblock %}
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row footerdiv">
+                    <div class="subdiv" style="text-align: center;">
+                        <img src="{% static 'img/Devsoc_Logo.png' %}" alt="" style="height:70%; width:auto">
+                    </div>
+                    <div class="subdiv">
+                        <div class="footer-info">
+                            <h3>Developers' Society</h3>
+                            <p class="pb-3"><em>Developers’ Society is an initiative by the Tech Team, TSG to foster and encourage the
+                                    development culture of IIT Kharagpur.</em></p>
+                            <p>
+                                Technology Students' Gymkhana, <br>
+                                IIT Kharagpur<br><br>
+                                <strong>Phone:</strong> +91 93548 17605<br>
+                                <strong>Email:</strong> devsoc.iitkgp@gmail.com<br>
+                            </p>
+                            <div class="social-links mt-3">
+                                <!-- <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a> -->
+                                <a href="https://www.facebook.com/devsoc.iitkgp" class="facebook" target="_blank"><i
+                                        class="bx bxl-facebook"></i></a>
+                                <a href="https://www.instagram.com/devsoc.iitkgp/" class="instagram" target="_blank"><i
+                                        class="bx bxl-instagram"></i></a>
+                                <!-- <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a> -->
+                                <a href="https://www.linkedin.com/company/devsoc-iitkgp/mycompany/" class="linkedin"
+                                    target="_blank"><i class="bx bxl-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="subdiv footer-links">
+                        <h4>Useful Links</h4>
+                        <ul>
+                            <li><i class="bx bx-chevron-right"></i> <a href="https://docs.google.com/forms/d/e/1FAIpQLSfy2uGMAqG__YxKqoiDhOSsYoLJScyQnjy3q1F4TSP1T6BjCw/viewform?fbclid=IwAR0-SJ26q5KNFl3_fyOkZ7iYYVYwG2ndJ0sXqAnQlf2YB1xXfztMDSkS3FY">GSOC Community</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="https://developers-society-hq.slack.com/join/shared_invite/zt-1mqm2kk1c-Aum_k0VaS8DJ9k6Y7Ug8BQ?fbclid=IwAR0KaYZe0qAmgeS0barS3elH2xRqdf8KcQuYPuFblJh2t8usRi2lxHIWvAU#/shared-invite/email">Slack Community</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="https://gymkhana.iitkgp.ac.in/">TSG, IIT Kharagpur</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="http://www.iitkgp.ac.in/">IIT Kharagpur</a></li>
+                            <!-- <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li> -->
+                        </ul>
+                        <h4>Our Projects</h4>
+                        <ul>
+                            <li><i class="bx bx-chevron-right"></i> <a href="https://play.google.com/store/apps/details?id=com.apnainsti&fbclid=IwAR2n5vQApgKpVXTXjcVD_3iXR-44UCkC0jxMmwRdTZxBb4PtvmlpjcrN1R0&pli=1">ApnaInsti</a></li>
+                            <!-- <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li> -->
+                        </ul>
+                    </div>
+
+                    <!-- <div class="col-lg-2 col-md-6 footer-links">
+                        <h4>Our Services</h4>
+                        <ul>
+                            <li><i class="bx bx-chevron-right"></i> <a href="https://play.google.com/store/apps/details?id=com.apnainsti&fbclid=IwAR2n5vQApgKpVXTXjcVD_3iXR-44UCkC0jxMmwRdTZxBb4PtvmlpjcrN1R0&pli=1">ApnaInsti</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
+                        </ul>
+                    </div> -->
+
+                    <div class="subdiv footer-newsletter" style="text-align: center;">
+                        <!-- <h4>Join our slack community</h4> -->
+                        <p>Subscribe to our newsletter for regular updates.</p>
+                        <form action="" method="POST" id="frmSubmit">
+                            {% csrf_token %}
+                            <input type="email" name="Email" placeholder="Enter your email"><input type="submit" value="Subscribe" id="btnSubmit">
+                        </form>
+                        <h4 style="margin-top: 10px;">Join our slack community</h4>
+                        <img src="{% static 'img/slack_devsoc.png' %}" alt="" style="width: auto; height:50%; float:left">
+                        
+                        <!-- <img src="{% static 'img/slack_devsoc.png' %}" alt="" style="width: auto; height:70%; float:left"> -->
+                        <!-- <img src="{% static 'img/slack.jpg' %}" alt=""style="width: 50%; height:50%"> -->
+
+                    </div>
+                    <!-- <div class="subdiv" style="text-align: center;">
+                        <h4>Join our slack community</h4>
+                        <img src="{% static 'img/slack_devsoc.png' %}" alt="" style="width: auto; height:70%; float:left">
+                        
+                    </div> -->
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="copyright">
+                &copy; Copyright <strong><span>Developers' Society</span></strong>. All Rights Reserved
+            </div>
+            <div class="credits">
+                <!-- All the links in the footer should remain intact. -->
+                <!-- You can delete the links only if you purchased the pro version. -->
+                <!-- Licensing information: https://bootstrapmade.com/license/ -->
+                <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/bootslander-free-bootstrap-landing-page-template/ -->
+                Designed by <a href="https://www.facebook.com/devsoc.iitkgp">Developers' Society</a>
+            </div>
+        </div>
+    </footer><!-- End Footer -->
+
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
+    <div id="preloader"></div>
+
+    <!-- Vendor JS Files -->
+    <script src="{% static 'vendor/purecounter/purecounter_vanilla.js' %}"></script>
+    <script src="{% static 'vendor/aos/aos.js' %}"></script>
+    <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'vendor/glightbox/js/glightbox.min.js' %}"></script>
+    <script src="{% static 'vendor/swiper/swiper-bundle.min.js' %}"></script>
+    <script src="{% static 'vendor/php-email-form/validate.js' %}"></script>
+
+    <!-- Template Main JS File -->
+    <script src="{% static 'js/main.js' %}"></script>
+    <script>
+        jQuery('#frmSubmit').on('submit',function(e){
+          e.preventDefault();
+          jQuery('#msg').html('Please wait...');
+          jQuery('#btnSubmit').attr('disabled',true);
+          jQuery.ajax({
+              url:'https://script.google.com/macros/s/AKfycbwvilp1LF824haur9ktqK83iNZ-uOokYgH8sxjiPQnvwp1esECjDGuzXmr-LjBUfT176w/exec',
+              type:'post',
+              data:jQuery('#frmSubmit').serialize(),
+              success:function(result){
+                  jQuery('#frmSubmit')[0].reset();
+                  jQuery('#msg').html('Thank You');
+                  jQuery('#btnSubmit').attr('disabled',false);
+                  //window.location.href='';
+              }
+          });
+        });
+        </script>
+
+</body>
+
+</html>
